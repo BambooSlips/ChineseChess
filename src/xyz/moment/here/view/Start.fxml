@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.moment.here.controller.StartController">
+   <children>
+      <Label layoutX="41.0" layoutY="347.0" text="对方IP：" />
+      <Label layoutX="342.0" layoutY="347.0" text="对方端口：" />
+      <TextField fx:id="IPField" layoutX="100.0" layoutY="342.0" promptText="127.0.0.1" text="127.0.0.1" />
+      <TextField fx:id="portField" layoutX="417.0" layoutY="342.0" prefHeight="20.0" prefWidth="92.0" promptText="3003" text="3003" />
+      <RadioButton fx:id="theRed" layoutX="120.0" layoutY="292.0" mnemonicParsing="false" text="我是红方" />
+      <RadioButton fx:id="theBlack" layoutX="342.0" layoutY="292.0" mnemonicParsing="false" text="我是黑方" />
+      <Button layoutX="252.0" layoutY="250.0" mnemonicParsing="false" onAction="#Start" text="开始" />
+      <Canvas fx:id="theme" height="200.0" layoutX="77.0" layoutY="33.0" width="400.0" />
+   </children>
+</AnchorPane>
